@@ -64,7 +64,6 @@ void init_lane(){
 }
 
 /**
- * TODO: Fill in this function
  *
  * Do all of the work required to prepare the intersection
  * before any cars start coming
@@ -84,7 +83,6 @@ void init_intersection() {
 }
 
 /**
- * TODO: Fill in this function
  *
  * Populates the corresponding lane with cars as room becomes
  * available. Ensure to notify the cross thread as new cars are
@@ -126,24 +124,12 @@ void *car_arrive(void *arg) {
 }
 
 /**
- * TODO: Fill in this function
  *
  * Moves cars from a single lane across the intersection. Cars
  * crossing the intersection must abide the rules of the road
  * and cross along the correct path. Ensure to notify the
  * arrival thread as room becomes available in the lane.
  *
- * Note: After crossing the intersection the car should be added
- * to the out_cars list that corresponds to the car's out_dir
- * 
- * Note: For testing purposes, each car which gets to cross the 
- * intersection should print the following three numbers on a 
- * new line, separated by spaces:
- *  - the car's 'in' direction, 'out' direction, and id.
- * 
- * You may add other print statements, but in the end, please 
- * make sure to clear any prints other than the one specified above, 
- * before submitting your final code. 
  */
 void *car_cross(void *arg) {
 
@@ -212,7 +198,6 @@ void *car_cross(void *arg) {
 }
 
 /**
- * TODO: Fill in this function
  *
  * Given a car's in_dir and out_dir return a sorted 
  * list of the quadrants the car will pass through.
